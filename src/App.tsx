@@ -3,6 +3,9 @@ import Home from './pages/home/Home';;
 import Footer from './components/footer/Footer';
 import Navbar from './components/navBar/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ListarCategorias from './components/categoria/listacategorias/ListaCategorias';
+import FormCategoria from './components/categoria/formcategoria/FormCategoria';
+import DeletarCategoria from './components/categoria/deletecategoria/DeleteCategoria';
 
 function App() {
   return (
@@ -13,6 +16,10 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/home" element={<Home />} />
+                            <Route path="/categorias" element={<ListarCategorias />} />
+                            <Route path="/cadcategoria" element={<FormCategoria />} />
+                            <Route path="/editarcategoria/:id" element={<FormCategoria />} />
+                            <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
                         </Routes>
                     </div>
                     <Footer />

@@ -5,9 +5,9 @@ import './Home.css';
 function Home() {
     return (
         <>
-        <div className="flex justify-center my-5">
+        <div className="flex justify-center py-4 bg-gray-200">
           <div className='container grid grid-cols-2 text-black'>
-            <div className="flex flex-col gap-6 items-center justify-center py-4">
+            <div className="flex flex-col gap-6 items-center justify-center">
               <h2 className='text-5xl font-bold'>Seja bem vindo!</h2>
               <p className='text-xl'>Seu bem-estar é a nossa prioridade</p>
   
